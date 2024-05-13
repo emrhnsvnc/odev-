@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    max-width: 20%; /* Ekranın yarısını kaplayacak şekilde boyutlandırır */
+    height: auto;
+    position: fixed; /* Sabit pozisyon */
+    top: 50%; /* Ekranın ortasına yerleştirir */
+    left: 50%; /* Ekranın ortasına yerleştirir */
+    transform: translate(-50%, -50%); /* Fotoğrafın merkezini ekranın merkezine getirir */
+    animation: fadeInOut 20s ease-in-out infinite; /* Animasyonun süresini 3 saniye olarak ayarladık */
+}
+
+.gallery p {
+    position: fixed; /* Sabit pozisyon */
+    bottom: 50px; /* Alt kenardan 10 piksel içerde */
+    left: 50%; /* Ekranın ortasına yerleştirir */
+    transform: translateX(-50%); /* Yatayda fotoğrafın merkezine hizalar */
+    color: white; /* Açıklama rengi */
+    background-color: rgba(0, 0, 0, 0.5); /* Açıklama arka plan rengi (yarı saydam siyah) */
+    padding: 10px; /* Açıklama içeriği ile kenar arasındaki boşluk */
+}
+button {
+    position: fixed; /* Sabit pozisyon */
+    bottom: 30px; /* Alt kenardan 30 piksel içerde */
+}
+
+#prevButton {
+    left: 40px; /* Sol kenardan 20 piksel içerde */
+}
+
+#nextButton {
+    left: 170px; /* Sol kenardan 20 piksel içerde */
+}
+
+#randomButton {
+    left: 5%; /* Ekranın ortasına yerleştirir */
+    transform: translateX(-50%); /* Yatayda fotoğrafın merkezine hizalar */
+}
+
+#firstButton {
+    left: 10px; /* Sağ kenardan 20 piksel içerde */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+@keyframes buttonAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+button {
+    animation: buttonAnimation 0.5s ease-in-out infinite; /* 0.5 saniyede oynatır, yumuşak giriş ve çıkış yapar, sonsuz tekrar */
+}
