@@ -1,5 +1,5 @@
 let images = ["pp1.jpeg", "pp2.jpeg", "pp3.jpeg", "pp4.jpeg", "pp5.jpeg"];
-let descriptions = ["Eskişehir hatırası sene bilmem kaç hey gidi günler heyy ", "Burası neresi inan hatırlamıyorum ama çok güzel çıkmışım ", "AAA bak burası araba fuarı klasik arabalar falan çok iyi", "Burasıda göksü parkı çok bi olayı yok", "Bu da bir klasik araba fuarından kalma hatta 3.resimle aynı gün  "];
+let descriptions = ["Eskişehir hatırası ", "Burası yenimahallede bir teknokent ", "Burası klasik araba fuarı", "Burasıda göksü parkı ", "Bu da bir klasik araba fuarından kalma hatta 3.resimle aynı gün  "];
 let currentIndex = 0;
 
 function changeImage() {
